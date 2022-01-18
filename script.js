@@ -106,7 +106,8 @@ nineButton.addEventListener('click', () => {
 divideButton.addEventListener('click', () => {
 	if (leftOperand != null && lastAction == 'number') {
 		result = operate(leftOperand, operand, operator);
-		calculatorDisplay.textContent = result;
+		if (result == 'Infinity') calculatorDisplay.textContent = "Nice try, mate.";
+		else calculatorDisplay.textContent = result;
 		leftOperand = result;
 		lastAction = 'operator';
 	}
