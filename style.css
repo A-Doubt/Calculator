@@ -1,0 +1,49 @@
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin: 100px;
+}
+
+ul {
+	list-style: none;
+}
+
+.calculator-container {
+	display: flex;
+	max-width: 35em;
+	flex-wrap: wrap;
+	margin: 20px;
+	justify-content: center;
+	align-items: center;
+	text-align: right;
+	border: solid 5px black;
+}
+
+.calculator-display {
+	width: 25em;
+}
+.buttons-container {
+	display: flex;
+}
+.list-numbers-buttons {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 5px;
+	grid-auto-columns: minmax(10px, auto);
+	padding: 0;
+}
+ul.list-operation-buttons {
+}
+
+button {
+	width: 100px;
+	height: 30px;
+}
+#zero {
+	grid-column: 1/3;
+	grid-row: 4;
+}
+#zero-button {
+	width: 205px;
+}
